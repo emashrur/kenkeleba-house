@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #faf6ee;
+  --paper-dim: #f3ecdd;
+  --ink: #221f1a;
+  --ink-soft: #55504a;
+  --line: #e2d7bf;
+  --rust: #b1472c;
+  --rust-dark: #8f3920;
+  --teal: #2c5450;
+  --gold: #b5852c;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-dim: var(--paper-dim);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-rust: var(--rust);
+  --color-rust-dark: var(--rust-dark);
+  --color-teal: var(--teal);
+  --color-gold: var(--gold);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-fraunces);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+::selection {
+  background: var(--rust);
+  color: var(--paper);
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
