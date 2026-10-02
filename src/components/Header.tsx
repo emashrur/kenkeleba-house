@@ -21,7 +21,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <Link href="/" className="group" onClick={() => setOpen(false)}>
-          <div className="font-display text-2xl tracking-tight text-ink">
+          <div className="font-display text-xl uppercase tracking-[0.12em] text-ink sm:text-2xl sm:tracking-[0.15em]">
             Kenkeleba House
           </div>
           <div className="text-[11px] uppercase tracking-[0.18em] text-ink-soft">
