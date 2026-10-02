@@ -213,6 +213,148 @@ export const sculptures: CollectionItem[] = [
   },
 ];
 
+export type TimelineImage = { src: string; alt: string; caption?: string };
+
+export type TimelineEvent = {
+  slug: string;
+  category: "Exhibition" | "Music" | "Community" | "Literary";
+  title: string;
+  dateRange: string;
+  subtitle?: string;
+  description?: string;
+  images: TimelineImage[];
+};
+
+export const timelineEvents: TimelineEvent[] = [
+  {
+    slug: "figures-light-and-abstraction",
+    category: "Exhibition",
+    title: "Figures Light and Abstraction",
+    dateRange: "July 17 – August 29, 2024",
+    subtitle: "Ashley Cole, Kevin Cole, James A. Brown, Cynthia Hawkins, and Debra Priestly",
+    description:
+      "Curated by Lamerol Gatewood and Michael Marshall at the Wilmer Jennings Gallery, this exhibition brought together artists working across painting, collage, and mixed media to explore freedom and identity through figure, light, and abstraction.",
+    images: [
+      { src: "/images/timeline/figures-light/poster.jpg", alt: "Exhibition postcard for Figures Light and Abstraction, featuring Cole, Bellows, 2023, mixed media on canvas." },
+      { src: "/images/timeline/figures-light/install-1.jpg", alt: "Gallery installation view of a large patchwork mixed-media wall piece at Figures Light and Abstraction." },
+      { src: "/images/timeline/figures-light/install-2.jpg", alt: "Installation view showing a colorful wall-mounted assemblage sculpture beside framed works." },
+      { src: "/images/timeline/figures-light/install-3.jpg", alt: "Two draped fabric and mixed-media artworks installed on a gallery wall." },
+      { src: "/images/timeline/figures-light/pink-green.jpg", alt: "A large abstract painting in pink and green tones hanging in the gallery." },
+    ],
+  },
+  {
+    slug: "michael-kelly-williams-crossings",
+    category: "Exhibition",
+    title: "Michael Kelly Williams: Crossings",
+    dateRange: "September 18 – November 2, 2024",
+    subtitle: "Curated by Debra Vanderburg Spencer",
+    description:
+      "A five-decade survey of sculpture, prints, and works on paper by Detroit-born, New York-based artist Michael Kelly Williams, whose two- and three-dimensional work draws on music and Jazz improvisation. The run included a discussion with Williams and writer Herb Boyd.",
+    images: [
+      { src: "/images/timeline/mkw/assemblage.jpg", alt: "Colorful wall-mounted assemblage sculpture by Michael Kelly Williams." },
+      { src: "/images/timeline/mkw/framed-work.jpg", alt: "Framed mixed-media collage in warm red and orange tones by Michael Kelly Williams." },
+      { src: "/images/timeline/mkw/intervale-study.jpg", alt: "Intervale Study, a monoprint with pastel by Michael Kelly Williams in blue and teal tones." },
+      { src: "/images/timeline/mkw/install.jpg", alt: "Gallery wall with three framed works on paper and a visitor viewing the show." },
+      { src: "/images/timeline/mkw/sculpture-fiddle.jpg", alt: "A found-object sculpture shaped like a violin or fiddle, mounted on the gallery wall." },
+      { src: "/images/timeline/mkw/sculpture-basket.jpg", alt: "A woven basket-form sculpture displayed on a pedestal." },
+      { src: "/images/timeline/mkw/sculpture-flower.jpg", alt: "A small sculptural work resembling an orange flower, mounted on the wall." },
+      { src: "/images/timeline/mkw/event-chat.jpg", alt: "Three visitors in conversation at the Crossings opening reception." },
+      { src: "/images/timeline/mkw/event-portrait.jpg", alt: "Two women posing together at the Crossings opening reception." },
+    ],
+  },
+  {
+    slug: "musicians-at-kenkeleba",
+    category: "Music",
+    title: "Musicians at Kenkeleba",
+    dateRange: "2024 – 2025",
+    subtitle: "Music Programs at Kenkeleba House",
+    description:
+      "Live music has long been part of Kenkeleba's programming, with performances woven into exhibition openings throughout the year — including a trio of Pheeroan AkLaff on drums, Will Cameron on bass, and Jun Miyake on saxophone, and Grammy-nominated Alberto Alba.",
+    images: [
+      { src: "/images/timeline/musicians/trio.jpg", alt: "Pheeroan AkLaff on drums and Jun Miyake on saxophone performing in the gallery, with Will Cameron on bass." },
+    ],
+  },
+  {
+    slug: "mysteries-of-connections",
+    category: "Exhibition",
+    title: "Mysteries of Connections and the Cultural Patterns",
+    dateRange: "December 11, 2024 – February 1, 2025",
+    subtitle: "Zheng Xue and Hiromitsu Kuroo, curated by Kimmy Li",
+    description:
+      "Beijing-born Zheng Xue and Yokohama-born Hiromitsu Kuroo presented paintings and folded and flattened works on paper exploring cross-cultural dialogue between Asian artistic traditions and the mysterious interconnectedness of systems.",
+    images: [
+      { src: "/images/timeline/mysteries/artist-portrait.jpg", alt: "Artist Zheng Xue in red with a guest in front of a large colorful painting." },
+      { src: "/images/timeline/mysteries/piano-performance.jpg", alt: "A pianist performing in the gallery in front of a teal and black painting." },
+      { src: "/images/timeline/mysteries/framed-works.jpg", alt: "Two framed works on paper in pink and orange tones by Hiromitsu Kuroo and Zheng Xue." },
+      { src: "/images/timeline/mysteries/fiber-work.jpg", alt: "A framed sculptural fiber work in yellow thread by Hiromitsu Kuroo." },
+    ],
+  },
+  {
+    slug: "poetry-reading-tar-baby",
+    category: "Literary",
+    title: "Poetry Reading: Tar Baby Magazine Launch",
+    dateRange: "Early 2025",
+    description:
+      "Kenkeleba hosted the launch of Tar Baby Magazine, featuring cover subject Felipe Luciano, with pianist Mamiko Watanabe and live jazz drawing a full house for the reading.",
+    images: [
+      { src: "/images/timeline/poetry/tarbaby-cover.jpg", alt: "A guest holding a copy of Tar Baby Magazine featuring Felipe Luciano on the cover." },
+      { src: "/images/timeline/poetry/luciano-speaking.jpg", alt: "Felipe Luciano speaking at the podium during the Tar Baby Magazine launch." },
+      { src: "/images/timeline/musicians/watanabe.jpg", alt: "Pianist Mamiko Watanabe performing at the Tar Baby Magazine launch." },
+      { src: "/images/timeline/poetry/band.jpg", alt: "A jazz trio performing with upright bass and saxophone at the Tar Baby Magazine launch." },
+      { src: "/images/timeline/poetry/band-wide.jpg", alt: "A jazz band performing for a full room at the Tar Baby Magazine launch." },
+      { src: "/images/timeline/poetry/guests.jpg", alt: "Two guests posing together, one holding a copy of Tar Baby Magazine." },
+    ],
+  },
+  {
+    slug: "analogies-signs-and-symbols",
+    category: "Exhibition",
+    title: "Analogies, Signs and Symbols",
+    dateRange: "February 19 – March 29, 2025",
+    subtitle:
+      "Charles Alston, Edward Mitchell Bannister, John Biggers, Elizabeth Catlett, David Hammons, Norman Lewis, Joe Overstreet, Rose Piper, Henry O. Tanner, and others",
+    description:
+      "A historical group exhibition exploring the experience of Black History in America across nearly 150 years of printmaking, painting, and pastel, from the era of slavery and abolition to the Great Migration and beyond.",
+    images: [
+      { src: "/images/timeline/analogies/ruins-landscape.jpg", alt: "Yolene Legrand, Ruins of the Old Slave Hospital, 2005 — a color photograph of ruins beneath large trees." },
+      { src: "/images/timeline/analogies/woodcut.jpg", alt: "A framed black-and-white woodcut print depicting a group of figures." },
+      { src: "/images/timeline/analogies/abstract-red.jpg", alt: "A large abstract painting in red and blue tones." },
+      { src: "/images/timeline/analogies/red-hexagon.jpg", alt: "A red print featuring portraits arranged in a hexagonal pattern." },
+      { src: "/images/timeline/analogies/jars.jpg", alt: "A photographic artwork depicting mason jars each containing a historical portrait." },
+      { src: "/images/timeline/analogies/flag.jpg", alt: "A framed American flag rendered in the red, black, and green of the Pan-African flag." },
+    ],
+  },
+  {
+    slug: "childrens-art-show-2025",
+    category: "Community",
+    title: "Children's Art Show: The Earth School Mystery Art Show",
+    dateRange: "April 4, 2025",
+    subtitle: "Featuring artwork from students, teachers, and local artists",
+    description:
+      "The Wilmer Jennings Gallery opened its doors to young artists from the Earth School for an evening exhibition of student work, drawing families from across the East Village.",
+    images: [
+      { src: "/images/timeline/childrens-show/poster.jpg", alt: "Poster for The Earth School Mystery Art Show, April 4, at the Wilmer Jennings Gallery at Kenkeleba." },
+      { src: "/images/timeline/childrens-show/crowd.jpg", alt: "Families and children walking through the gallery viewing student artwork." },
+      { src: "/images/timeline/childrens-show/outdoor.jpg", alt: "A crowd of families gathered outside the gallery for the Earth School Mystery Art Show." },
+    ],
+  },
+  {
+    slug: "blues-and-mean-reds-sound-of-light",
+    category: "Exhibition",
+    title: "The Blues and the Mean Reds & Sound of Light",
+    dateRange: "April 26 – June 28, 2025",
+    subtitle: "Frank Stewart and Petra Richterová",
+    description:
+      "Two exhibitions of photography paired in dialogue, exploring Jazz culture and the broader landscape of music. Frank Stewart's decades of photography document legendary musicians across the Black Diaspora, alongside Petra Richterová's images of Afro-Cuban and Caribbean performance and ritual.",
+    images: [
+      { src: "/images/timeline/blues/featured-works.jpg", alt: "Two black-and-white photographs side by side: Frank Stewart's Boy and Two Girls, Harlem, 1974, and a work by Petra Richterová." },
+      { src: "/images/timeline/blues/marsalis-piano.jpg", alt: "Wynton Marsalis playing piano at the opening reception." },
+      { src: "/images/timeline/blues/install-viewing.jpg", alt: "A visitor viewing framed photographs on the gallery wall." },
+      { src: "/images/timeline/blues/reception-crowd.jpg", alt: "Guests gathered at the opening reception for The Blues and the Mean Reds." },
+      { src: "/images/timeline/blues/guest-portrait.jpg", alt: "Two guests posing together at the opening reception, one holding a book." },
+    ],
+  },
+];
+
 export const sculptureGardenImage = {
   src: "/images/collection/sculpture/garden-general.jpg",
   alt: "General view of the Kenkeleba House sculpture garden, with several large outdoor sculptures among trees and a fence.",
