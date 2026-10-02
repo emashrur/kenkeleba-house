@@ -10,7 +10,7 @@ const categoryColor: Record<TimelineEvent["category"], string> = {
 
 export default function TimelineEntry({ event }: { event: TimelineEvent }) {
   return (
-    <article className="relative pl-10 md:pl-14">
+    <article id={event.slug} className="relative scroll-mt-28 pl-10 md:pl-14">
       <span
         className="absolute left-[3px] top-2 h-3 w-3 rounded-full border-2 border-paper bg-rust md:left-[7px]"
         aria-hidden="true"
