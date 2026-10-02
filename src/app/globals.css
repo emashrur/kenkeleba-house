@@ -12,6 +12,79 @@
   --gold: #b5852c;
 }
 
+/* Theme preview variants — set via data-theme on <html> by ThemeSwitcher. */
+html[data-theme="noir"] {
+  --paper: #15130f;
+  --paper-dim: #201c15;
+  --ink: #f2ead9;
+  --ink-soft: #b3a890;
+  --line: #38321f;
+  --rust: #e0943f;
+  --rust-dark: #c97a28;
+  --teal: #4fb8ab;
+  --gold: #d9b94a;
+}
+
+html[data-theme="crisp-red"] {
+  --paper: #ffffff;
+  --paper-dim: #f1f1ef;
+  --ink: #0a0a0a;
+  --ink-soft: #656562;
+  --line: #dedede;
+  --rust: #b3261e;
+  --rust-dark: #8f1e18;
+  --teal: #2b2b2b;
+  --gold: #8a8a8a;
+}
+
+html[data-theme="sunlit-berry"] {
+  --paper: #fbf7e9;
+  --paper-dim: #f2e9b8;
+  --ink: #161511;
+  --ink-soft: #54503e;
+  --line: #e3d68a;
+  --rust: #c0265c;
+  --rust-dark: #9a1d49;
+  --teal: #0e8a7d;
+  --gold: #e0a608;
+}
+
+html[data-theme="kente"] {
+  --paper: #1a1510;
+  --paper-dim: #241d15;
+  --ink: #f5efe0;
+  --ink-soft: #c2b59e;
+  --line: #3a2f20;
+  --rust: #d4a017;
+  --rust-dark: #a87d12;
+  --teal: #c21e1e;
+  --gold: #1e8f4e;
+}
+
+html[data-theme="slate-orange"] {
+  --paper: #eef1f3;
+  --paper-dim: #dfe4e8;
+  --ink: #1b2228;
+  --ink-soft: #5c6670;
+  --line: #c7cfd6;
+  --rust: #d2531e;
+  --rust-dark: #a84317;
+  --teal: #2f6690;
+  --gold: #c7901f;
+}
+
+html[data-theme="monochrome"] {
+  --paper: #ffffff;
+  --paper-dim: #eeeeee;
+  --ink: #111111;
+  --ink-soft: #666666;
+  --line: #d4d4d4;
+  --rust: #1a1a1a;
+  --rust-dark: #000000;
+  --teal: #4d4d4d;
+  --gold: #8a8a8a;
+}
+
 @theme inline {
   --color-paper: var(--paper);
   --color-paper-dim: var(--paper-dim);

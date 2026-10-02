@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Fraunces } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 import "./globals.css";
 
 const inter = Inter({
@@ -39,9 +41,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       data-scroll-behavior="smooth"
+      suppressHydrationWarning
       className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-paper text-ink font-sans">
+        <Script id="theme-preview-init" strategy="beforeInteractive">
+          {`try{var t=localStorage.getItem('kh-theme-preview');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}`}
+        </Script>
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>
@@ -50,6 +56,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <Footer />
+        <ThemeSwitcher />
       </body>
     </html>
   );
