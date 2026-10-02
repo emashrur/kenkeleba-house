@@ -2,10 +2,10 @@
 
 :root {
   --paper: #faf6ee;
-  --paper-dim: #f3ecdd;
+  --paper-dim: #ecd7a8;
   --ink: #221f1a;
   --ink-soft: #55504a;
-  --line: #e2d7bf;
+  --line: #ddc48a;
   --rust: #b1472c;
   --rust-dark: #8f3920;
   --teal: #2c5450;
@@ -15,10 +15,10 @@
 /* Theme preview variants — set via data-theme on <html> by ThemeSwitcher. */
 html[data-theme="noir"] {
   --paper: #15130f;
-  --paper-dim: #201c15;
+  --paper-dim: #3a2b12;
   --ink: #f2ead9;
-  --ink-soft: #b3a890;
-  --line: #38321f;
+  --ink-soft: #cbb68a;
+  --line: #4d3a18;
   --rust: #e0943f;
   --rust-dark: #c97a28;
   --teal: #4fb8ab;
@@ -27,10 +27,10 @@ html[data-theme="noir"] {
 
 html[data-theme="crisp-red"] {
   --paper: #ffffff;
-  --paper-dim: #f1f1ef;
+  --paper-dim: #f8dad8;
   --ink: #0a0a0a;
   --ink-soft: #656562;
-  --line: #dedede;
+  --line: #efb9b6;
   --rust: #b3261e;
   --rust-dark: #8f1e18;
   --teal: #2b2b2b;
@@ -51,10 +51,10 @@ html[data-theme="sunlit-berry"] {
 
 html[data-theme="kente"] {
   --paper: #1a1510;
-  --paper-dim: #241d15;
+  --paper-dim: #432f0d;
   --ink: #f5efe0;
-  --ink-soft: #c2b59e;
-  --line: #3a2f20;
+  --ink-soft: #d4b878;
+  --line: #5a3f10;
   --rust: #d4a017;
   --rust-dark: #a87d12;
   --teal: #c21e1e;
@@ -63,10 +63,10 @@ html[data-theme="kente"] {
 
 html[data-theme="slate-orange"] {
   --paper: #eef1f3;
-  --paper-dim: #dfe4e8;
+  --paper-dim: #f3d9c3;
   --ink: #1b2228;
   --ink-soft: #5c6670;
-  --line: #c7cfd6;
+  --line: #e3b791;
   --rust: #d2531e;
   --rust-dark: #a84317;
   --teal: #2f6690;
@@ -75,10 +75,10 @@ html[data-theme="slate-orange"] {
 
 html[data-theme="monochrome"] {
   --paper: #ffffff;
-  --paper-dim: #eeeeee;
+  --paper-dim: #d9d9d9;
   --ink: #111111;
   --ink-soft: #666666;
-  --line: #d4d4d4;
+  --line: #bdbdbd;
   --rust: #1a1a1a;
   --rust-dark: #000000;
   --teal: #4d4d4d;
